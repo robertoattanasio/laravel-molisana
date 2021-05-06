@@ -1,0 +1,81 @@
+/*! FOOTER */
+
+footer {
+    width: 100%;
+}
+
+footer>.wrapper {
+    display: flex;
+    width: 992px;
+    margin: 50px auto;
+    .footer-col {
+        flex: 0 0 calc(100% / 4);
+        padding: 0 20px;
+        height: 100%;
+        img.logo {
+            width: 100%;
+        }
+        img.numbers {
+            display: block;
+            width: 40%;
+            margin: 20px 0;
+        }
+        li.title-blue {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: $primaryFont;
+            text-transform: uppercase;
+            color: $secondaryBlue;
+        }
+        li.title-grey {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: $primaryFont;
+            text-transform: uppercase;
+            color: $lightGrey;
+            &:hover {
+                color: $secondaryBlue;
+                cursor: pointer;
+            }
+        }
+        li.news {
+            font-size: 12px;
+            text-transform: uppercase;
+            &::before {
+                content: '>> ';
+            }
+        }
+        li.info {
+            font-size: 10px;
+            font-weight: 200;
+            text-transform: uppercase;
+            strong {
+                font-weight: 700;
+                &:hover {
+                    color: $secondaryBlue;
+                    cursor: pointer;
+                }
+            }
+        }
+        li {
+            margin-bottom: 6px;
+            display: block;
+            font-weight: 200;
+            color: $lightGrey;
+            cursor: pointer;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.bottom-footer {
+    height: 120px;
+    background-image: url(../img/footer-montagne-bottom.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
