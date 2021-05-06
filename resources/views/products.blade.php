@@ -2,5 +2,17 @@
 @section('pageTitle', 'Prodotti')
 
 @section('content')
-    sono i prodotti 
+
+    <div class="pasta-container">
+        @foreach ($paste as $item)
+
+        <div class="pasta-item">
+            <img src="{{$item['src']}}" alt="">
+            <div class="pasta-item-info">
+                <h2>{{$item['titolo']}}</h2>
+            </div>
+        </div>
+            
+        @endforeach
+    </div>
 @endsection

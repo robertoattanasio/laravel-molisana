@@ -10,7 +10,7 @@
 
     {{-- GOOGLE FONTS --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     {{-- STYLES CSS --}}
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
@@ -20,7 +20,9 @@
 <body class="">
     @include('partials.header')
 
-    @yield('content')
+    <main>
+        @yield('content')
+    </main>
 
     @include('partials.footer')
 </body>
