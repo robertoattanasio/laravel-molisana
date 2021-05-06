@@ -102,7 +102,7 @@ main {
 .pasta-item {
   position: relative;
   flex-basis: calc(100% / 3);
-  min-width: 500px;
+  min-width: 350px;
   height: 320px;
   overflow: hidden;
 }
